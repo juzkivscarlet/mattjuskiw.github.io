@@ -33,7 +33,7 @@
 		font-weight: 700;
 		text-shadow: 0px 0px 4px gray;
 	}
-	.navbar-brand ul li, #navbar ul li.active {
+	.navbar-brand:hover, #navbar ul li.active {
 		color: #59fe53;
 	}
 	.navbar, .navbar-brand {
