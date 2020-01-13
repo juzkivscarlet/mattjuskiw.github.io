@@ -4,15 +4,13 @@ import './mobile.css';
 
 import Wrapper from './components/Wrapper';
 import Navigator from './components/Navigator';
-import Container from './components/Container';
+import Content from './components/pages/Content';
 
 function App() {
 	return (
 		<Wrapper>
 			<Navigator />
-			<Container>
-				
-			</Container>
+			<Content />
 		</Wrapper>
 	);
 }
