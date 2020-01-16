@@ -5,7 +5,7 @@ const cards = [
 		text: [
 			`I had what I deem to be a rather introverted childhood. While most other kids my age were playing video games, watching tv, 
 			or any other typical childhood hobbies, I preferred to explore and learn about various interests, such as foreign languages, 
-			musicianship, and, of course, <span class="font-italic">coding</span>. Although coding stopped being a hobby of mine by high school, 
+			musicianship, and, of course, coding. Although coding stopped being a hobby of mine by high school, 
 			and despite making only basic programs, the conceptual, literal thinking behind the logic of coding had already been well 
 			developed. `,
 			`After turning 19 years old, I rediscovered my passion for coding, and enrolled myself in the Case Western Reserve University 
