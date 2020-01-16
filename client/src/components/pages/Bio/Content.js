@@ -10,7 +10,7 @@ function Data(site, type, text, link) {
 
 	this.setTag = function() {
 		if(type=='newTab') return (<a target='_blank' href={link}>{this.text}</a>);
-		// else if(type=='')
+		else if(type=='text') return (<span>{this.text}</span>);
 	};
 }
 
@@ -30,6 +30,8 @@ function Content() {
 
 	info.push(new Data('LinkedIn', 'newTab', 'Here', 'https://www.linkedin.com/in/matthew-juskiw-5462ab187/'));
 	info.push(new Data('GitHub', 'newTab', 'mattjuskiw', 'https://www.github.com/mattjuskiw/'));
+	info.push(new Data('Portfolio', 'text', 'Here, or in the sidebar'));
+	info.push(new Data('Email Address', 'text', 'juskiwmatt@gmail.com'));
 
 	return (
 		<Row>

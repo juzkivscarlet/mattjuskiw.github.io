@@ -1,5 +1,4 @@
 import React from 'react';
-import { Card, CardGroup, Col, Row } from 'react-bootstrap';
 import './style.css';
 
 import Header from './Header';
