@@ -34,7 +34,7 @@ function Content() {
 	info.push(new Data('Email Address', 'text', 'juskiwmatt@gmail.com'));
 
 	return (
-		<Row>
+		<Row id='bio-content'>
 			<Col md={3}>
 				<Card bg='dark' text='white' id='selfie-card-one'>
 					<Card.Img variant='top' src='/assets/Me2.jpeg' />

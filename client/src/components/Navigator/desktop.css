@@ -45,4 +45,7 @@
 		float: left;
 		position: fixed;
 	}
+	#navbar a:hover {
+		color: #59fe53;
+	}
 }

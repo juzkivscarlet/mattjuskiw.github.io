@@ -23,12 +23,12 @@ function ProjectCard(props) {
 
 	return (
 		<Card className='bg-dark text-white'>
-			<Card.Header className='text-muted font-italic'>{proj.type}</Card.Header>
+			<Card.Header className='mutalics'>{proj.type}</Card.Header>
 			<img className='card-img-top' src={proj.thumbnail} alt={proj.name} />
 
 			<Card.Body>
 				<Card.Title>
-					<a href={proj.github} target='_blank'>{proj.name}</a>
+					<a href={proj.github} target='_blank' className='mono'>{proj.name}</a>
 				</Card.Title>
 
 				<Card.Text>
@@ -46,13 +46,13 @@ function ProjectCard(props) {
 				</ul>
 			</Card.Body>
 
-			<Card.Body className='text-center'>
-					<a href={proj.link} className='btn btn-primary' target='_blank'>
+			<Card.Body className='text-center mt-0 pt-0'>
+					<a href={proj.link} className='btn btn-primary btn-shadow' target='_blank'>
 						See <span className='font-italic'>{proj.name}</span>!
 					</a>
 			</Card.Body>
 
-			<Card.Footer className='text-muted text-right'>
+			<Card.Footer className='mutalics text-right'>
 				{proj.date}
 			</Card.Footer>
 		</Card>

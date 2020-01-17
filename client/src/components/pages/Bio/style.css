@@ -1,6 +1,10 @@
+#main-bio {
+	margin-top: 40%;
+}
+
 #basic-info {
 	width: 100%;
-	height: 60%;
+	height: auto;
 }
 #basic-info .card {
 	height: 100%;

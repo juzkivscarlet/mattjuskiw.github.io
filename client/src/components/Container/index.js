@@ -3,7 +3,7 @@ import './style.css';
 
 function Container(props) {
 	return (
-		<div className='body container-fluid' data-spy='scroll' data-target='.navbar' data-offset='50' >
+		<div className='body container-fluid'>
 			{props.children}
 		</div>
 	);

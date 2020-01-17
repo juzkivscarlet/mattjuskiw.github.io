@@ -14,7 +14,11 @@ function Featured() {
 
 			<Container>
 				<Row className='clearfix w-100 mx-auto'>
-					<h3 className='text-center'>Featured Project</h3>
+					<h3 className='text-center w-100'>
+						<strong className='mono'>
+							Featured Project
+						</strong>
+					</h3>
 					<hr className='my-4' />
 				</Row>
 
@@ -26,7 +30,7 @@ function Featured() {
 					<Col md={9} className='position-relative' id='featured-info'>
 						<h5 className='mt-0'>
 							<a href={proj.github} target='_blank' id='featured-github-link'>
-								<strong id='featured-name'>
+								<strong id='featured-name' className='mono'>
 									{proj.name}
 								</strong>
 							</a>
@@ -36,9 +40,11 @@ function Featured() {
 							{proj.desc}
 						</p>
 
-						<a href={proj.link} className='btn btn-primary' target='_blank' role='button' id='featured-link'>
-							View it here!
-						</a>
+						<div className='text-right'>
+							<a href={proj.link} className='btn btn-primary btn-shadow' target='_blank' role='button' id='featured-link'>
+								View it here!
+							</a>
+						</div>
 					</Col>
 				</Row>
 

@@ -9,7 +9,7 @@ function SelfieCardTwo() {
 		<Card className='bg-dark text-white'>
 			<img src='/assets/Playing-guitar.jpg' className='card-img-top' alt='Playing Guitar' style={{display:'inline-block'}} />
 			<Card.Body>
-				<Card.Text className='font-italic'>
+				<Card.Text className='mutalics'>
 					I've been playing guitar since I was 7 years old.
 				</Card.Text>
 			</Card.Body>
@@ -21,10 +21,10 @@ function InfoCard(props) {
 	const data = props.data;
 	return (
 		<Card className='bg-dark text-white'>
-			<Card.Header>{data.header}</Card.Header>
+			<Card.Header className='mutalics'>{data.header}</Card.Header>
 
 			<Card.Body>
-				<Card.Title>{data.title}</Card.Title>
+				<Card.Title className='mono text-center'>{data.title}</Card.Title>
 				{data.text.map((text, i) => {
 					return (
 						<Card.Text key={i}>
