@@ -25,9 +25,9 @@ function InfoCard(props) {
 
 			<Card.Body>
 				<Card.Title>{data.title}</Card.Title>
-				{data.text.map(text => {
+				{data.text.map((text, i) => {
 					return (
-						<Card.Text>
+						<Card.Text key={i}>
 							{text}
 						</Card.Text>
 					)
@@ -42,9 +42,9 @@ function AboutCards() {
 		<Row>
 			<Col lg={9}>
 				<CardGroup>
-					{cards.map(card => {
+					{cards.map((card, i) => {
 						return (
-							<InfoCard data={card} />
+							<InfoCard key={i} data={card} />
 						)
 					})}
 				</CardGroup>

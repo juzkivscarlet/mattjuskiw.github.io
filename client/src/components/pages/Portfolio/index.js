@@ -7,7 +7,7 @@ import Projects from './Projects';
 
 function Portfolio() {
 	return (
-		<div>
+		<div id='portfolio'>
 			<Header />
 			<hr className='my-4' />
 

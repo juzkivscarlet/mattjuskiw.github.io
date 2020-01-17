@@ -19,7 +19,7 @@ function Featured() {
 
 			<Row className='clearfix'>
 				<Col md={3} id='featured-col-left'>
-					<img className='img-fluid img-thumbnail' id='featured-thumbnail' src={proj.thumbnail} />
+					<img className='img-fluid img-thumbnail' id='featured-thumbnail' src={proj.thumbnail} alt={proj.name} />
 				</Col>
 
 				<Col md={9} className='position-relative' id='featured-info'>
@@ -45,9 +45,9 @@ function Featured() {
 				<div className='text-center mx-auto text-dark'>
 					<strong>Technologies used: </strong>
 					<ul className='list-group list-group-horizontal font-italic' id='featured-technologies'>
-						{proj.tech.map(tech => {
+						{proj.tech.map((tech, i) => {
 							return (
-								<li className='list-group-item bg-light'>{tech}</li>
+								<li key={i} className='list-group-item bg-light'>{tech}</li>
 							);
 						})}
 					</ul>

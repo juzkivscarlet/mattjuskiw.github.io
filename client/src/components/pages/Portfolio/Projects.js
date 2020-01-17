@@ -38,9 +38,9 @@ function ProjectCard(props) {
 				
 				<small className='text-muted font-italic'>Technologies used: </small>
 				<ul className='list-group list-group-flush bg-dark'>
-					{proj.tech.map(tech => {
+					{proj.tech.map((tech, i) => {
 						return (
-							<li className='list-group-item bg-dark'>{tech}</li>
+							<li key={i} className='list-group-item bg-dark'>{tech}</li>
 						);
 					})}
 				</ul>
@@ -62,10 +62,10 @@ function ProjectCard(props) {
 function Projects() {
 	return (
 		<ProjectWrapper>
-			{projects.map(proj => {
+			{projects.map((proj, i) => {
 				if(proj.featured===false) {
 					return (
-						<ProjectCard proj={proj} />
+						<ProjectCard key={i} proj={proj} />
 					);
 				}
 			})}

@@ -9,8 +9,8 @@ function Data(site, type, text, link) {
 	this.link = link;
 
 	this.setTag = function() {
-		if(type=='newTab') return (<a target='_blank' href={link}>{this.text}</a>);
-		else if(type=='text') return (<span>{this.text}</span>);
+		if(type==='newTab') return (<a target='_blank' href={link}>{this.text}</a>);
+		else if(type==='text') return (<span>{this.text}</span>);
 	};
 }
 
@@ -73,9 +73,9 @@ function Content() {
 						<Card.Body>
 							<Card.Title className='text-center'>You can find me and my work here: </Card.Title>
 							<dl>
-								{info.map(item => {
+								{info.map((item, i) => {
 									return (
-										<ContactInfo item={item} />
+										<ContactInfo key={i} item={item} />
 									);
 								})}
 							</dl>
