@@ -15,6 +15,10 @@
 	padding-bottom: 10px;
 }
 
+#featured-name:hover {
+	text-shadow: 0px 0px 6px #eee;
+}
+
 #featured-col-left {
 	height: 100%;
 }

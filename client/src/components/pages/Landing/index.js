@@ -5,7 +5,7 @@ import './style.css';
 function Landing() {
 	return (
 		<div id='landing'>
-			<Jumbotron className='text-center bg-dark' id='landingJumbo'>
+			<Jumbotron className='text-center bg-dark text-light' id='landingJumbo'>
 				<h1 className='display-4'>
 					Matt Juskiw <small className='text-muted font-italic'>- Web Developer</small>
 				</h1>

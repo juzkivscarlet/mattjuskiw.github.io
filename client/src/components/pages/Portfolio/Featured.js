@@ -29,8 +29,8 @@ function Featured() {
 
 					<Col md={9} className='position-relative' id='featured-info'>
 						<h5 className='mt-0'>
-							<a href={proj.github} target='_blank' id='featured-github-link'>
-								<strong id='featured-name' className='mono'>
+							<a href={proj.github} target='_blank' id='featured-github-link' className='mono'>
+								<strong id='featured-name'>
 									{proj.name}
 								</strong>
 							</a>

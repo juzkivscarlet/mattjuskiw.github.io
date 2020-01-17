@@ -11,6 +11,7 @@ function Data(site, type, text, link) {
 	this.setTag = function() {
 		if(type==='newTab') return (<a target='_blank' href={link}>{this.text}</a>);
 		else if(type==='text') return (<span>{this.text}</span>);
+		else if(type==='hyperlink') return (<span><a href={this.link}>{this.text[0]}</a>{this.text[1]}</span>);
 	};
 }
 
@@ -30,7 +31,7 @@ function Content() {
 
 	info.push(new Data('LinkedIn', 'newTab', 'Here', 'https://www.linkedin.com/in/matthew-juskiw-5462ab187/'));
 	info.push(new Data('GitHub', 'newTab', 'mattjuskiw', 'https://www.github.com/mattjuskiw/'));
-	info.push(new Data('Portfolio', 'text', 'Here, or in the sidebar'));
+	info.push(new Data('Portfolio', 'hyperlink', ['Here', ', or in the sidebar'], '/portfolio'));
 	info.push(new Data('Email Address', 'text', 'juskiwmatt@gmail.com'));
 
 	return (
@@ -39,10 +40,10 @@ function Content() {
 				<Card bg='dark' text='white' id='selfie-card-one'>
 					<Card.Img variant='top' src='/assets/Me2.jpeg' />
 					<Card.Body>
-						<Card.Text>
+						<Card.Text className='text-center'>
 							Somtimes I like to take selfies in my truck. 
 							<br />
-							<span className='font-italic'>
+							<span className='mutalics'>
 								Don't worry, I'm always parked when doing so. 
 							</span>
 						</Card.Text>
@@ -54,9 +55,9 @@ function Content() {
 				<CardGroup className='clearfix text-white' id='basic-info'>
 
 					<Card bg='dark'>
-						<Card.Header>My Skills</Card.Header>
+						<Card.Header className='mutalics'>My Skills</Card.Header>
 						<Card.Body>
-							<Card.Title className='text-center'>Skills I'm nurturing: </Card.Title>
+							<Card.Title className='text-center mono'>Skills I'm nurturing: </Card.Title>
 							<ul className='list-unstyled'>
 								<li>&mdash; HTML & CSS, Bootstrap</li>
 								<li>&mdash; Javascript, jQuery</li>
@@ -69,9 +70,9 @@ function Content() {
 					</Card>
 
 					<Card bg='dark'>
-						<Card.Header>Contact Information</Card.Header>
+						<Card.Header className='mutalics'>Contact Information</Card.Header>
 						<Card.Body>
-							<Card.Title className='text-center'>You can find me and my work here: </Card.Title>
+							<Card.Title className='text-center mono'>You can find me and my work here: </Card.Title>
 							<dl>
 								{info.map((item, i) => {
 									return (

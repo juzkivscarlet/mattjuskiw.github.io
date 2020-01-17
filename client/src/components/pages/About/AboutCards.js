@@ -9,7 +9,7 @@ function SelfieCardTwo() {
 		<Card className='bg-dark text-white'>
 			<img src='/assets/Playing-guitar.jpg' className='card-img-top' alt='Playing Guitar' style={{display:'inline-block'}} />
 			<Card.Body>
-				<Card.Text className='mutalics'>
+				<Card.Text className='mutalics text-center'>
 					I've been playing guitar since I was 7 years old.
 				</Card.Text>
 			</Card.Body>
