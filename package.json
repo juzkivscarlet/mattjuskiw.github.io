@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "server.js",
-	"homepage": "https://mattjuskiw.github.io/PortfolioReact/",
+	"homepage": "https://mattjuskiw.github.io/",
 	"dependencies": {
 		"bootstrap": "^4.4.1",
 		"express": "^4.17.1",
@@ -31,12 +31,11 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/mattjuskiw/PortfolioReact.git"
+		"url": "git+https://github.com/mattjuskiw/mattjuskiw.github.io.git"
 	},
 	"author": "Matt Juskiw",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/mattjuskiw/PortfolioReact/issues"
-	},
-	"homepage": "https://github.com/mattjuskiw/PortfolioReact#readme"
+		"url": "https://github.com/mattjuskiw/mattjuskiw.github.io/issues"
+	}
 }
