@@ -73,9 +73,9 @@ function Content() {
 						<Card.Body>
 							<Card.Title className='text-center'>You can find me and my work here: </Card.Title>
 							<dl>
-								{info.map(item => {
+								{info.map((item, i) => {
 									return (
-										<ContactInfo item={item} />
+										<ContactInfo key={i} item={item} />
 									);
 								})}
 							</dl>

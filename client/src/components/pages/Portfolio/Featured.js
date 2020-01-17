@@ -45,9 +45,9 @@ function Featured() {
 				<div className='text-center mx-auto text-dark'>
 					<strong>Technologies used: </strong>
 					<ul className='list-group list-group-horizontal font-italic' id='featured-technologies'>
-						{proj.tech.map(tech => {
+						{proj.tech.map((tech, i) => {
 							return (
-								<li className='list-group-item bg-light'>{tech}</li>
+								<li key={i} className='list-group-item bg-light'>{tech}</li>
 							);
 						})}
 					</ul>
