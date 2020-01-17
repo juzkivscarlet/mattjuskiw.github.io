@@ -19,7 +19,7 @@ function Featured() {
 
 			<Row className='clearfix'>
 				<Col md={3} id='featured-col-left'>
-					<img className='img-fluid img-thumbnail' id='featured-thumbnail' src={proj.thumbnail} />
+					<img className='img-fluid img-thumbnail' id='featured-thumbnail' src={proj.thumbnail} alt={proj.name} />
 				</Col>
 
 				<Col md={9} className='position-relative' id='featured-info'>

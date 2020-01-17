@@ -1,0 +1,15 @@
+#featured-jumbo {
+	background-color: #aac;
+	color: black;
+}
+#featured-col-left {
+	height: 100%;
+}
+#featured-thumbnail {
+	float: left;
+	box-shadow: 0px 0px 8px #333;
+}
+
+.card-columns {
+	display: inline-block;
+}

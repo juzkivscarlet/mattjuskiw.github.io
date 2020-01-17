@@ -1,0 +1,7 @@
+#main-bio, #portfolio, #about {
+	display: inline-block;
+	min-height: 110%;
+}
+#bio-image {
+	display: inline-block;
+}
