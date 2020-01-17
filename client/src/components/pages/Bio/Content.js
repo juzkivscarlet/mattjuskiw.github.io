@@ -57,7 +57,7 @@ function Content() {
 						<Card.Header>My Skills</Card.Header>
 						<Card.Body>
 							<Card.Title className='text-center'>Skills I'm nurturing: </Card.Title>
-							<ul>
+							<ul className='list-unstyled'>
 								<li>&mdash; HTML & CSS, Bootstrap</li>
 								<li>&mdash; Javascript, jQuery</li>
 								<li>&mdash; Node.js, Express.js</li>

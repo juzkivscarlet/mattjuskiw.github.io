@@ -64,7 +64,7 @@ liri.desc = "A simple command-line application for Node.js that allows you to se
 	"run the command 'do-what-it-says' to run the command written in an external text file. Every user command will be logged into an external " +
 	"local text file.";
 
-const geoTrivia = new Project("Geography Trivia!", "Game", "niagarafalls-trees.JPG", "September 2019");
+const geoTrivia = new Project("Geography Trivia!", "Game", "niagarafalls-trees.jpeg", "September 2019");
 geoTrivia.setTechnologies(["HTML & CSS", "Bootstrap", "Javascript & jQuery", "JSON"]);
 geoTrivia.setLinks(["https://github.com/mattjuskiw/TriviaGame", "https://mattjuskiw.github.io/TriviaGame/"]);
 geoTrivia.desc = "Just a simple 10-question trivia game on world geography. This game displays ten questions " +

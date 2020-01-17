@@ -4,7 +4,7 @@ import './style.css';
 
 function Header() {
 	return (
-		<Jumbotron className='text-dark' fluid>
+		<Jumbotron className='text-dark'>
 			<h1 className='display-4 text-center'>More About Me</h1>
 		</Jumbotron>
 	);

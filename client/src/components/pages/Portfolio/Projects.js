@@ -23,7 +23,7 @@ function ProjectCard(props) {
 
 	return (
 		<Card className='bg-dark text-white'>
-			<Card.Header>{proj.type}</Card.Header>
+			<Card.Header className='text-muted font-italic'>{proj.type}</Card.Header>
 			<img className='card-img-top' src={proj.thumbnail} alt={proj.name} />
 
 			<Card.Body>
