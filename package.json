@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "server.js",
-	"homepage": "https://mattjuskiw.github.io/",
+	"homepage": "https://mattjuskiw.github.io/PortfolioReact/",
 	"dependencies": {
 		"bootstrap": "^4.4.1",
 		"express": "^4.17.1",
