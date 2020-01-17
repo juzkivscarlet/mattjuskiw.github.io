@@ -6,7 +6,7 @@ import Content from './Content';
 
 function Bio() {
 	return (
-		<div>
+		<div id='main-bio'>
 			<Header />
 			<hr className='my-4' />
 

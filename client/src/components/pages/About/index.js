@@ -6,7 +6,7 @@ import AboutCards from './AboutCards';
 
 function About() {
     return (
-        <div>
+        <div id='about'>
             <Header />
             <hr className='my-4' />
 
