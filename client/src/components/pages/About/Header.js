@@ -4,7 +4,7 @@ import './style.css';
 
 function Header() {
 	return (
-		<Jumbotron>
+		<Jumbotron className='header'>
 			<h1 className='display-4 mono'>More About Me</h1>
 		</Jumbotron>
 	);

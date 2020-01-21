@@ -52,9 +52,9 @@ function Content() {
 			</Col>
 
 			<Col md={9}>
-				<CardGroup className='clearfix text-white' id='basic-info'>
+				<CardGroup className='text-white' id='basic-info'>
 
-					<Card bg='dark'>
+					<Card bg='dark' className='clearfix'>
 						<Card.Header className='mutalics'>My Skills</Card.Header>
 						<Card.Body>
 							<Card.Title className='text-center mono'>Skills I'm nurturing: </Card.Title>
@@ -69,7 +69,7 @@ function Content() {
 						</Card.Body>
 					</Card>
 
-					<Card bg='dark'>
+					<Card bg='dark' className='clearfix'>
 						<Card.Header className='mutalics'>Contact Information</Card.Header>
 						<Card.Body>
 							<Card.Title className='text-center mono'>You can find me and my work here: </Card.Title>

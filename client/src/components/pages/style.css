@@ -1,6 +1,7 @@
-#main-bio, #portfolio, #about {
+#landing, #main-bio, #portfolio, #about {
 	display: inline-block;
-	min-height: 110%;
+	min-height: 100%;
+	width: 100%;
 }
 #bio-image {
 	display: inline-block;
