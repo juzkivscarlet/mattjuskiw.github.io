@@ -45,7 +45,7 @@
 		float: left;
 		position: fixed;
 	}
-	#navbar a:hover {
+	#navbar a.active {
 		color: #59fe53;
 	}
 }
