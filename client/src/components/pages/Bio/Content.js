@@ -1,39 +1,108 @@
 import React from 'react';
 import { Card, CardGroup, Col, Row } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faAt, faBriefcase, faCode, faDatabase, faFilePdf, faFolderOpen } from '@fortawesome/free-solid-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 import './style.css';
 
-function Data(site, type, text, link) {
+library.add(fab);
+
+function Data(site, type, icon, text, link) {
 	this.site = site;
 	this.type = type;
+	if(icon) this.icon = icon;
 	this.text = text;
 	this.link = link;
 
 	this.setTag = function() {
-		if(type==='newTab') return (<a target='_blank' href={link}>{this.text}</a>);
-		else if(type==='text') return (<span>{this.text}</span>);
-		else if(type==='hyperlink') return (<span><a href={this.link}>{this.text[0]}</a>{this.text[1]}</span>);
+		if(type==='newTab') return (
+			<a target='_blank' href={link}>{this.text}</a>
+		);
+		else if(type==='text') return (
+			<span className='font-italic'>
+				{this.text}
+			</span>
+		);
+		else if(type==='hyperlink') return (
+			<>
+				<a href={this.link}>{this.text[0]}</a>
+				<span className='font-italic'>
+					{this.text[1]}
+				</span>
+			</>
+		);
 	};
 }
 
 function ContactInfo(props) {
 	return (
 		<div className='row'>
-			<dt className='col-sm-4'>{props.item.site}: </dt>
-			<dd className='col-sm-8'>
+			<dt className='col-sm-6 w-100'>
+				<Row>
+					<Col sm={3}>
+						{props.item.icon && 
+							<FontAwesomeIcon icon={props.item.icon} size='lg' />
+						}
+					</Col>
+					<Col sm={9}>
+						{props.item.site}
+					</Col>
+				</Row>
+			</dt>
+			<dd className='col-sm-6'>
 				{props.item.setTag()}
 			</dd>
 		</div>
 	);
 }
 
+function SkillsList() {
+	const skills = [
+		{
+			text: "HTML, CSS, Bootstrap",
+			icon: ['fab', 'html5']
+		}, {
+			text: "Javascript, jQuery",
+			icon: ['fab', 'js-square']
+		}, {
+			text: "Node.js, Express.js",
+			icon: ['fab', 'node-js']
+		}, {
+			text: "ReactJS, Handlebars.js",
+			icon: ['fab', 'react']
+		}, {
+			text: "MySQL, Sequelize, MongoDB, Mongoose",
+			icon: faDatabase
+		}
+	];
+	
+	return (
+		<dl>
+			{skills.map((skill, i) => {
+				return (
+					<Row key={i}>
+						<dt className='col-md-2'>
+							<FontAwesomeIcon icon={skill.icon} size='lg' />
+						</dt>
+						<dd className='col-md-10 text-center font-italic mono'>
+							{skill.text}
+						</dd>
+					</Row>
+				);
+			})}
+		</dl>
+	);
+}
+
 function Content() {
 	const info = [];
-
-	info.push(new Data('LinkedIn', 'newTab', 'Here', 'https://www.linkedin.com/in/matthew-juskiw-5462ab187/'));
-	info.push(new Data('GitHub', 'newTab', 'mattjuskiw', 'https://www.github.com/mattjuskiw/'));
-	info.push(new Data('Portfolio', 'hyperlink', ['Here', ', or in the sidebar'], '/portfolio'));
-	info.push(new Data('Email Address', 'text', 'juskiwmatt@gmail.com'));
-	info.push(new Data('Resume', 'hyperlink', ['Here', ''], '/assets/Resume.pdf'));
+	
+	info.push(new Data('LinkedIn', 'newTab', faBriefcase, 'Here', 'https://www.linkedin.com/in/matthew-juskiw-5462ab187/'));
+	info.push(new Data('GitHub', 'newTab', faCode, 'mattjuskiw', 'https://www.github.com/mattjuskiw/'));
+	info.push(new Data('Portfolio', 'hyperlink', faFolderOpen, ['Here', ', or in the sidebar'], '/portfolio'));
+	info.push(new Data('Email Address', 'text', faAt, 'juskiwmatt@gmail.com'));
+	info.push(new Data('Resume', 'newTab', faFilePdf, ['Here', ''], '/assets/Resume.pdf'));
 
 	return (
 		<Row id='bio-content'>
@@ -53,27 +122,20 @@ function Content() {
 			</Col>
 
 			<Col md={9}>
-				<CardGroup className='text-white' id='basic-info'>
+				<CardGroup className='text-white clearfix' id='basic-info'>
 
-					<Card bg='dark' className='clearfix'>
+					<Card bg='dark'>
 						<Card.Header className='mutalics'>My Skills</Card.Header>
 						<Card.Body>
-							<Card.Title className='text-center mono'>Skills I'm nurturing: </Card.Title>
-							<ul className='list-unstyled'>
-								<li>&mdash; HTML & CSS, Bootstrap</li>
-								<li>&mdash; Javascript, jQuery</li>
-								<li>&mdash; Node.js, Express.js</li>
-								<li>&mdash; React.js, Handlebars.js</li>
-								<li>&mdash; MySQL, Sequelize</li>
-								<li>&mdash; MongoDB, Mongoose</li>
-							</ul>
+							<Card.Title className='mono'>Skills I'm nurturing: </Card.Title>
+							<SkillsList />
 						</Card.Body>
 					</Card>
 
-					<Card bg='dark' className='clearfix'>
+					<Card bg='dark'>
 						<Card.Header className='mutalics'>Contact Information</Card.Header>
 						<Card.Body>
-							<Card.Title className='text-center mono'>You can find me and my work here: </Card.Title>
+							<Card.Title className='mono'>You can find me and my work here: </Card.Title>
 							<dl>
 								{info.map((item, i) => {
 									return (
