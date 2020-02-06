@@ -26,7 +26,7 @@ Project.setFeatured = project => {
 const sellOut = new Project('Sell Out!', 'Project', 'sell-out.png', 'February 2020');
 sellOut.setTechnologies(['ReactJS', 'Bootstrap', 'Node.js', 'MySQL', 'Express.js', 'CSS'], [], ['Axios', 'React Bootstrap', 'React Particles']);
 sellOut.setLinks(["https://github.com/matt319940/sellout", "http://matt-sellout.herokuapp.com/"]);
-sellOut.desc = "From the 'About' page: Sell Out is a two-part web application. Firstly, we employ a Business to Business (B2B) model to facilitate the exchange of goods and services among its business users. And secondly, the sales of these goods and services are facilitated via our own personally employed sales force, which consists of a team of contractors qualified through training - thereby outsourcing any need of a Sales Department for our business users.";
+sellOut.desc = "From the 'About' page - Sell Out is a two-part web application. Firstly, we employ a Business to Business (B2B) model to facilitate the exchange of goods and services among its business users. And secondly, the sales of these goods and services are facilitated via our own personally employed sales force, which consists of a team of contractors qualified through training - thereby outsourcing any need of a Sales Department for our business users.";
 
 const keepCheerful = new Project("Keep Cheerful", "Project", "keep-cheerful.png", "December 2019");
 keepCheerful.setTechnologies(["HTML & CSS", "Bootstrap", "Javascript & jQuery", "Node.js", "Express.js", "Handlebars.js", "MySQL", "AJAX"], ["Dark Sky", "icanhazdadjoke", "Unofficial Astrology.com API"], ["Axios", "Sequelize", "dotenv", "Reverse Geocode"]);

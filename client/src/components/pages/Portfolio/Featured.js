@@ -30,7 +30,7 @@ function Featured() {
 					<Col md={9} className='position-relative' id='featured-info'>
 						<h5 className='mt-0'>
 							<a href={proj.github} target='_blank' id='featured-github-link' className='mono'>
-								<strong id='featured-name'>
+								<strong id='featured-name' className='text-primary'>
 									{proj.name}
 								</strong>
 							</a>
@@ -50,7 +50,7 @@ function Featured() {
 
 				<Row className='clearfix'>
 					<div className='text-center mx-auto text-dark'>
-						<strong>Technologies used: </strong>
+						<span className='mutalics'>Technologies used: </span>
 						<ul className='list-group list-group-horizontal font-italic' id='featured-technologies'>
 							{proj.tech.map((tech, i) => {
 								return (
