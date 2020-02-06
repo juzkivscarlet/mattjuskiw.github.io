@@ -33,6 +33,7 @@ function Content() {
 	info.push(new Data('GitHub', 'newTab', 'mattjuskiw', 'https://www.github.com/mattjuskiw/'));
 	info.push(new Data('Portfolio', 'hyperlink', ['Here', ', or in the sidebar'], '/portfolio'));
 	info.push(new Data('Email Address', 'text', 'juskiwmatt@gmail.com'));
+	info.push(new Data('Resume', 'hyperlink', ['Here', ''], '/assets/Resume.pdf'));
 
 	return (
 		<Row id='bio-content'>
