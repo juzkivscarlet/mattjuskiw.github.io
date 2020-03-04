@@ -11,8 +11,8 @@ function Landing() {
 				</h1>
 
 				<p className='lead'>
-					I am a 20-year old aspiring web developer from the Cleveland, Ohio area. 
-					I am currently enrolled in the Full-Stack Web Development Bootcamp at Case Western Reserve University until February 2020.
+					I am an enthusiastic aspiring web developer from the Cleveland, Ohio area. 
+					I was recently certified by the Full-Stack Web Development Bootcamp at Case Western Reserve University.
 				</p>
 			</Jumbotron>
 		</div>
